@@ -10,7 +10,10 @@ mongoose
   .then(() => console.log("db connected successfully"))
   .catch((err) => console.log(err));
 
-  app.get("/api/")
+  app.get("/api/", ()=> {
+    console.log("test is successful");
+    
+  })
 
 app.listen( process.env.PORT || 5000, () => {
   console.log("server running on 5000");
