@@ -1,13 +1,14 @@
-const mongoose = requier("mongoose");
+const mongoose = require("mongoose");
 
 const StockSchema = new mongoose.Schema(
   {
     title: { type: String, required: true, unique: true },
     quantity: { type: Number, required: true },
-    price: { type: Number },
-    categories: { trpe: Array },
+    img: {type: String},
+    tags: { type: Array, required:true, lowercase: true },
+    price: { type: Number, required: true },
   },
-  { timestaps: true }
+  { timestamps: true }
 );
 
 module.exports = mongoose.model("Stock", StockSchema);

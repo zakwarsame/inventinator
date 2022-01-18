@@ -6,16 +6,16 @@ const inventoryRoute = require("./routes/inventory");
 
 dotenv.config();
 
+// Connecting to Mongo
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => console.log("db connected successfully"))
   .catch((err) => console.log(err));
 
-app.get("/api/", () => {
-  console.log("test is successful");
-});
+//json parser middleware
+app.use(express.json());
 
-app.use(express.json())
+
 app.use("/api/inventory", inventoryRoute);
 
 app.listen(process.env.PORT || 5000, () => {
