@@ -64,7 +64,7 @@ Clone the repo
    ```sh
    git clone https://github.com/zakwarsame/inventinator.git
    ```
- On the client folder:
+ On the **client folder**:
 
 1. Install npm packages
    ```sh
@@ -77,7 +77,7 @@ Clone the repo
     npm start
     ```
 
-On the server folder:
+On the **server folder**:
 
 1. Install NPM packages
    ```sh
