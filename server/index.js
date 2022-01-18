@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/inventory", inventoryRoute);
 
-
+app.get('/', (req, res) => { res.send('Hello from Express!')
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("server running on 5000");
