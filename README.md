@@ -60,33 +60,33 @@ An inventory management application built with NodeJs and Express on the backend
 
 ### Installation
 
-1. Clone the repo
+Clone the repo
    ```sh
    git clone https://github.com/zakwarsame/inventinator.git
    ```
-
 On the client folder:
 
-1. Install npm packages
-   ```sh
-   npm install
-   ```
-1. Follow the `.env.example` by setting up a `.env` file. Use your MongoDB Connect URL here.
-
-1. Start the server
+    1. Install npm packages
 ```sh
-npm start
+npm install
 ```
+    
+    2. Follow the `.env.example` by setting up a `.env` file. Use your MongoDB Connect URL here.
+
+    3. Start the server
+   ```sh
+    npm start
+   ```
 
 On the server folder:
 
-1. Install NPM packages
+    1. Install NPM packages
    ```sh
    npm install
    ```
-1. Follow the `.env.example` by setting up a `.env` file
+    2. Follow the `.env.example` by setting up a `.env` file
 
-1. Start the server
+    3. Start the server
 ```sh
 npm start
 ```
@@ -122,9 +122,9 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Zak_py](https://twitter.com/Zak_py) - zakwarsame@gmail.com
+Zak Warsame - [@Zak_py](https://twitter.com/Zak_py) - zakwarsame@gmail.com
 
-Project Link: [https://github.com/zakwarsame/inventinator](https://github.com/zakwarsame/inventinator)
+Inventinator: [https://github.com/zakwarsame/inventinator](https://github.com/zakwarsame/inventinator)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
