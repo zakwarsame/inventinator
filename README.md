@@ -64,29 +64,28 @@ Clone the repo
    ```sh
    git clone https://github.com/zakwarsame/inventinator.git
    ```
-On the client folder:
+ On the client folder:
 
-    1. Install npm packages
-```sh
-npm install
-```
-    
-    2. Follow the `.env.example` by setting up a `.env` file. Use your MongoDB Connect URL here.
-
-    3. Start the server
-   ```sh
-    npm start
-   ```
-
-On the server folder:
-
-    1. Install NPM packages
+1. Install npm packages
    ```sh
    npm install
    ```
-    2. Follow the `.env.example` by setting up a `.env` file
+1. Follow the `.env.example` by setting up a `.env` file. Use your MongoDB Connect URL here.
 
-    3. Start the server
+1. Start the server
+```sh
+npm start
+```
+
+On the server folder:
+
+1. Install NPM packages
+   ```sh
+   npm install
+   ```
+1. Follow the `.env.example` by setting up a `.env` file
+
+1. Start the server
 ```sh
 npm start
 ```
