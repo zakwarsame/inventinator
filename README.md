@@ -6,7 +6,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#description">Description</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -26,17 +26,17 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Description
 
 
 An inventory management application built with NodeJs and Express on the backend and React on the frontend. It is a CRUD application that makes use of a RESTful API.
 
 ### Built With
 
+* [NodeJS](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com//)
 * [React.js](https://reactjs.org/)
 * [Material UI](https://mui.com/)
-* [NodeJS](https://nodejs.org/en/)
 
 ### Features
 
@@ -50,7 +50,7 @@ An inventory management application built with NodeJs and Express on the backend
 
 ### Prerequisites
 
-1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm). This app was both built and hosted using node v16.13.1
+1. Install and use the correct version of Node using [nvm](https://github.com/nvm-sh/nvm). This app was both built and hosted using node v16.13.1
    ```sh
    nvm install
    ```
@@ -79,7 +79,7 @@ Clone the repo
 
 On the **server folder**:
 
-1. Install NPM packages
+1. Install npm packages
    ```sh
    npm install
    ```
