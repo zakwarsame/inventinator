@@ -73,9 +73,9 @@ Clone the repo
 1. Follow the `.env.example` by setting up a `.env` file. Use your MongoDB Connect URL here.
 
 1. Start the server
-```sh
-npm start
-```
+    ```sh
+    npm start
+    ```
 
 On the server folder:
 
@@ -86,9 +86,9 @@ On the server folder:
 1. Follow the `.env.example` by setting up a `.env` file
 
 1. Start the server
-```sh
-npm start
-```
+    ```sh
+    npm start
+    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
