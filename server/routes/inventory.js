@@ -7,9 +7,6 @@
 const Inventory = require("../models/Stock");
 const router = require("express").Router();
 const json2csv = require("json2csv").parse;
-const path = require("path");
-const fs = require("fs");
-const moment = require("moment");
 
 // fields used for csv exporting
 const fields = ["title", "price", "quantity", "status", "tags"];
@@ -104,21 +101,27 @@ router.delete("/:id", (req, res) => {
 });
 
 // EXPORT TO CSV
+/**
+ * will find all items available and return them ready for csv export
+ * @param {*} req
+ * @param {*} res
+ */
 
 router.get("/export", (req, res) => {
-  Inventory.find().then((allItems) => {
-    let csv;
-    try {
-      csv = json2csv(allItems, { fields });
-    } catch (err) {
-      return res.status(500).json(err);
-    }
+  Inventory.find()
+    .then((allItems) => {
+      let csv;
+      try {
+        csv = json2csv(allItems, { fields });
+      } catch (err) {
+        return res.status(500).json(err);
+      }
 
-    
-    res.header("Content-Type", "text/csv");
-    res.attachment("data");
-    return res.status(200).send(csv);
-  });
+      res.header("Content-Type", "text/csv");
+      res.attachment("data");
+      return res.status(200).send(csv);
+    })
+    .catch((err) => res.status(500).json(err));
 });
 
 module.exports = router;

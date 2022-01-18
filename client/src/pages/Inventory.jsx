@@ -6,6 +6,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import useInventoryData from "../hooks/useInventoryData";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import {
   Box,
   Button,
@@ -33,8 +34,9 @@ const Inventory = () => {
         </Box>
         <Box flexGrow={1}>
           <Button
-            variant="contained"
+            variant="outlined"
             color="primary"
+            startIcon={<FileDownloadIcon />}
             onClick={() => exportToCSV()}
           >
             Export
