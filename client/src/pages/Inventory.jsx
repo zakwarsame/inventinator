@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 
 const Inventory = () => {
-  const { items, updateItem, deleteItem } = useInventoryData();
+  const { items, navigateToUpdate, deleteItem } = useInventoryData();
 
   
 
@@ -71,10 +71,10 @@ const Inventory = () => {
                     color="primary"
                     aria-label="outlined primary button group"
                   >
-                    <Button onClick={() => updateItem(eachItem._id)}>
+                    <Button onClick={() => navigateToUpdate(eachItem._id)}>
                       Edit
                     </Button>
-                    <Button onClick={() => deleteItem(eachItem._id)}>Del</Button>
+                    <Button onClick={() => deleteItem(eachItem._id, eachItem)}>Del</Button>
                   </ButtonGroup>
                 </TableCell>
               </TableRow>
