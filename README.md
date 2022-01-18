@@ -12,8 +12,8 @@
       </ul>
     </li>
     <li>
+      <a href="#features">Features</a>
       <ul>
-        <li><a href="#features">Features</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -38,7 +38,7 @@ An inventory management application built with NodeJs and Express on the backend
 * [React.js](https://reactjs.org/)
 * [Material UI](https://mui.com/)
 
-### Features
+## Features
 
 - Create inventory items
 - Edit
