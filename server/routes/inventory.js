@@ -25,7 +25,7 @@ router.put("/:id", (req, res) => {
     { new: true }
   )
     .then((updatedItem) => res.status(200).json(updatedItem))
-    .catch((err) => res.status(500).json(err));
+    .catch((err) => console.log(err));
 });
 
 // DELETE ITEM
