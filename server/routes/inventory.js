@@ -89,7 +89,7 @@ router.put("/:id", (req, res) => {
 
 // DELETE ITEM
 /**
- * delete an image by the specified id, takes in a url in the form of .../inventory/:id
+ * delete an item by the specified id, takes in a url in the form of .../inventory/:id
  * @param {*} req
  * @param {*} res
  */
