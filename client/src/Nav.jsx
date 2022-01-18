@@ -3,8 +3,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -12,7 +11,13 @@ const Nav = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Inventinator
+            <Button
+                component={Link}
+                to="/"
+                sx={{ color: 'white', fontSize:24 }}
+              >
+                Inventinator
+              </Button>
           </Typography>
         </Toolbar>
       </AppBar>

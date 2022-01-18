@@ -10,18 +10,16 @@ import {
   Box,
   Button,
   ButtonGroup,
+  Chip,
   Container,
   Toolbar,
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-
 const Inventory = () => {
-  const { items, navigateToUpdate, deleteItem } = useInventoryData();
-
-  
-
+  const { items, navigateToUpdate, deleteItem, exportToCSV } =
+    useInventoryData();
 
   return (
     <Container>
@@ -33,6 +31,15 @@ const Inventory = () => {
             Inventory
           </Typography>
         </Box>
+        <Box flexGrow={1}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => exportToCSV()}
+          >
+            Export
+          </Button>
+        </Box>
 
         <Button
           component={Link}
@@ -43,13 +50,14 @@ const Inventory = () => {
           CREATE
         </Button>
       </Box>
-      <TableContainer component={Paper}>
+      <TableContainer sx={{ marginTop: 4 }} component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="inventory table">
           <TableHead>
             <TableRow>
               <TableCell>ID</TableCell>
               <TableCell>Title</TableCell>
               <TableCell align="right">Quantity</TableCell>
+              <TableCell align="center">Status</TableCell>
               <TableCell align="right">Price</TableCell>
               <TableCell align="center">Action</TableCell>
             </TableRow>
@@ -65,6 +73,13 @@ const Inventory = () => {
                   {eachItem.title}
                 </TableCell>
                 <TableCell align="right">{eachItem.quantity}</TableCell>
+                <TableCell align="right">
+                  {eachItem.status ? (
+                    <Chip label="active" color="success" variant="outlined" />
+                  ) : (
+                    <Chip label="inactive" color="error" variant="outlined" />
+                  )}
+                </TableCell>
                 <TableCell align="right">{eachItem.price}</TableCell>
                 <TableCell align="center">
                   <ButtonGroup
@@ -74,7 +89,9 @@ const Inventory = () => {
                     <Button onClick={() => navigateToUpdate(eachItem._id)}>
                       Edit
                     </Button>
-                    <Button onClick={() => deleteItem(eachItem._id, eachItem)}>Del</Button>
+                    <Button onClick={() => deleteItem(eachItem._id, eachItem)}>
+                      Del
+                    </Button>
                   </ButtonGroup>
                 </TableCell>
               </TableRow>

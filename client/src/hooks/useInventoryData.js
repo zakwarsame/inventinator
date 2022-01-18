@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import download from "downloadjs";
 
 const useInventoryData = () => {
   const [items, setItems] = useState([]);
@@ -57,6 +58,19 @@ const useInventoryData = () => {
       .catch((err) => console.log(err));
   };
 
+  const exportToCSV = () => {
+    axios
+      .get(`inventory/export`)
+      .then((csvItems) => {
+        if (csvItems) {
+          download(csvItems.data, new Date().toLocaleDateString() + "-items.csv");
+        } else {
+          alert("Items not found :(");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+
   useEffect(() => {
     fetchItems();
   }, []);
@@ -69,6 +83,7 @@ const useInventoryData = () => {
     navigate,
     createItem,
     findItemUsingId,
+    exportToCSV
   };
 };
 
