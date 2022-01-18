@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Select from "@mui/material/Select";
 import { MenuItem } from "@mui/material";
-
+import axios from "axios";
 import { useParams } from "react-router-dom";
 import useInventoryData from "../hooks/useInventoryData";
 
@@ -18,11 +18,18 @@ const UpdateInventory = () => {
   const [tags, setTags] = useState([]);
   const [status, setStatus] = useState(true);
 
-  const { updateItem, findItemUsingId } = useInventoryData();
+  const { updateItem } = useInventoryData();
 
   const { id } = useParams();
 
   useEffect(() => {
+    const findItemUsingId = (id) => {
+      return axios
+        .get(`/inventory/find/${id}`)
+        .then((item) => item)
+        .catch((err) => err);
+    };
+
     findItemUsingId(id).then((item) => {
       setTitle(item.data.title);
       setQuantity(item.data.quantity);

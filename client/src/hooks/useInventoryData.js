@@ -18,12 +18,6 @@ const useInventoryData = () => {
     navigate(`/update/${id}`);
   };
 
-  const findItemUsingId = (id) => {
-    return axios
-      .get(`/inventory/find/${id}`)
-      .then((item) => item)
-      .catch((err) => err);
-  };
 
   const updateItem = (id, itemToBeUpdated) => {
     axios
@@ -82,7 +76,6 @@ const useInventoryData = () => {
     deleteItem,
     navigate,
     createItem,
-    findItemUsingId,
     exportToCSV
   };
 };
