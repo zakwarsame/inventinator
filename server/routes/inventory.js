@@ -44,7 +44,7 @@ router.get("/find/:id", (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
-// GET ALL ITEMS
+// GET ALL ITEMS AND HAVE A FILTER QUERY
 
 router.get("/", (req, res) => {
   const newItemQuery = req.query.new;
