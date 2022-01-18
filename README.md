@@ -31,10 +31,6 @@
 
 An inventory management application built with NodeJs and Express on the backend and React on the frontend. It is a CRUD application that makes use of a RESTful API.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 ### Built With
 
 * [Express.js](https://expressjs.com//)
