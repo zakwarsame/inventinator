@@ -31,7 +31,7 @@ An inventory management application built with NodeJs and Express on the backend
 
 Visit the Netlify hosted app here: **[Inventinator](https://inventinator.netlify.app/)**
 
-The Heroku hosted API is hosted here: **[Inventinator API](https://inventinator-api.herokuapp.com/api/inventory)**
+Find Heroku hosted API here: **[Inventinator API](https://inventinator-api.herokuapp.com/api/inventory)**
 
 ## API
 
