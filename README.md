@@ -7,8 +7,8 @@
     <li>
       <a href="#description">Description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
         <li><a href="#api">API Endpoints</a></li>
+        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -31,7 +31,14 @@ An inventory management application built with NodeJs and Express on the backend
 
 Visit the Netlify hosted app here: **[Inventinator](https://inventinator.netlify.app/)**
 
-Find Heroku hosted API here: **[Inventinator API](https://inventinator-api.herokuapp.com/api/inventory)**
+The Heroku hosted API can be found here: **[Inventinator API](https://inventinator-api.herokuapp.com/api/inventory)**
+
+### Built With
+
+- [NodeJS](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com//)
+- [React.js](https://reactjs.org/)
+- [Material UI](https://mui.com/)
 
 ## API
 
@@ -146,13 +153,6 @@ Response:
 `GET /api/inventory/export`
 
 
-### Built With
-
-- [NodeJS](https://nodejs.org/en/)
-- [Express.js](https://expressjs.com//)
-- [React.js](https://reactjs.org/)
-- [Material UI](https://mui.com/)
-
 ## Features
 
 - Create inventory items
@@ -172,6 +172,7 @@ Response:
 
 1. You'll also need to create an account and set up a database with MongoDB:
    `https://docs.mongodb.com/manual/tutorial/getting-started/`
+   Note: I've provided mine in the `.env.example` file inside the server folder for now.
 
 ### Installation
 
