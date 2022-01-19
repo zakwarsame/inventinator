@@ -30,6 +30,7 @@
 An inventory management application built with NodeJs and Express on the backend and React on the frontend. It is a CRUD application that makes use of a RESTful API.
 
 Visit the Netlify hosted app here: **[Inventinator](https://inventinator.netlify.app/)**
+
 The Heroku hosted API is hosted here: **[Inventinator API](https://inventinator-api.herokuapp.com/api/inventory)**
 
 ## API
