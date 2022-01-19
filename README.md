@@ -173,7 +173,7 @@ Response:
 1. You'll also need to create an account and set up a database with MongoDB:
    `https://docs.mongodb.com/manual/tutorial/getting-started/`
    
-   **Note**: I've provided mine in the `.env.example` file inside the server folder for now.
+   **Note**: I've provided mine in the `.env.example` file inside the server folder for now. Replace `<password>` with `inventinator2`
 
 ### Installation
 
