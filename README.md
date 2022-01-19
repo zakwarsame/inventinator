@@ -145,21 +145,6 @@ Response:
 
 `GET /api/inventory/export`
 
-Body:
-
-```json
-  {
-    "_id": "61e75edf3b068de8390d15ee",
-    "title": "Ballgown",
-    "quantity": 23,
-    "tags": ["wearables", " women"],
-    "price": 400,
-    "status": true,
-    "createdAt": "2022-01-19T00:44:15.157Z",
-    "updatedAt": "2022-01-19T00:44:15.157Z",
-    "__v": 0
-  }
-```
 
 ### Built With
 
