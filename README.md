@@ -7,8 +7,8 @@
     <li>
       <a href="#description">Description</a>
       <ul>
-        <li><a href="#api">API Endpoints</a></li>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#api">API Endpoints</a></li>
       </ul>
     </li>
     <li>
@@ -172,7 +172,8 @@ Response:
 
 1. You'll also need to create an account and set up a database with MongoDB:
    `https://docs.mongodb.com/manual/tutorial/getting-started/`
-   Note: I've provided mine in the `.env.example` file inside the server folder for now.
+   
+   **Note**: I've provided mine in the `.env.example` file inside the server folder for now.
 
 ### Installation
 
@@ -182,7 +183,7 @@ Clone the repo
 git clone https://github.com/zakwarsame/inventinator.git
 ```
 
-On the **client folder**:
+On the **server folder**:
 
 1. Install npm packages
    ```sh
@@ -195,7 +196,7 @@ On the **client folder**:
    npm start
    ```
 
-On the **server folder**:
+On the **client folder**:
 
 1. Install npm packages
    ```sh
