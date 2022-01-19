@@ -1,7 +1,7 @@
 /*
   Inventinator
   Copyright (c) 2022 zak<zakwarsamee@gmail.com>
-  See LICENSE.txt for more information
+  See LICENSE.md for more information
 */
 
 const Inventory = require("../models/Stock");
